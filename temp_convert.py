@@ -10,12 +10,12 @@ def fahrenheit():
     # The try catch in this case allows decimals because temperature can be a decimal.
     try:
         celsius_temp = float(input("What is the temperature? (C): "))
+
+        # The celsius to fahrenheit formula.
+        fahrenheit_temp = (1.8 * celsius_temp) + 32
+        print("{}(C) = {:.2f}(F)".format(celsius_temp, fahrenheit_temp))
     except:
         print("Your input is not a number.")
-
-    # The celsius to fahrenheit formula.
-    fahrenheit_temp = (1.8 * celsius_temp) + 32
-    print("{}(C) = {:.2f}(F)".format(celsius_temp, fahrenheit_temp))
 
 
 def main():
